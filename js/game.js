@@ -11,7 +11,7 @@ import { updateLevel4 } from "../LevelLogic/World1/Level4.js";
 import { updateLevel5 } from "../LevelLogic/World1/Level5.js";
 import { io } from "https://cdn.socket.io/4.7.2/socket.io.esm.min.js";
 
-const socket = io("http://localhost:3000");
+const socket = io("syncsteps67-bot-production.up.railway.app");
 
 socket.on("connect", () => {
     console.log("Connected:", socket.id);
