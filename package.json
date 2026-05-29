@@ -1,5 +1,5 @@
 {
-"name": "sync-steps",
+  "name": "sync-steps",
   "version": "1.0.0",
   "type": "module",
   "main": "server.js",
@@ -11,5 +11,3 @@
     "socket.io": "^4.8.1"
   }
 }
-
-
