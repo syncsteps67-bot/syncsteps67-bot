@@ -165,7 +165,6 @@ io.on("connection", (socket) => {
         console.log("Player disconnected:", socket.id);
     });
 });
-
-server.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });
