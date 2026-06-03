@@ -9,7 +9,7 @@ import { updateLevel2 } from "../LevelLogic/World1/Level2.js";
 import { updateLevel3 } from "../LevelLogic/World1/Level3.js";
 import { updateLevel4 } from "../LevelLogic/World1/Level4.js";
 import { updateLevel5 } from "../LevelLogic/World1/Level5.js";
-import { io } from "https://cdn.socket.io/4.7.2/socket.io.esm.min.js";
+import { io } from "https://cdn.socket.io/4.8.1/socket.io.esm.min.js";
 
 const socket = io("https://syncsteps67-bot-production.up.railway.app");
 
