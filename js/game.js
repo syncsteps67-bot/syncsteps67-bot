@@ -9,21 +9,15 @@ import { updateLevel2 } from "../LevelLogic/World1/Level2.js";
 import { updateLevel3 } from "../LevelLogic/World1/Level3.js";
 import { updateLevel4 } from "../LevelLogic/World1/Level4.js";
 import { updateLevel5 } from "../LevelLogic/World1/Level5.js";
-import { io } from "https://cdn.socket.io/4.8.1/socket.io.esm.min.js";
+// TEMP DEBUG: Socket.IO disabled
+// import { io } from "https://cdn.socket.io/4.8.1/socket.io.esm.min.js";
 
-const socket = io("https://syncsteps67-bot-production.up.railway.app");
-
-socket.on("connect", () => {
-    console.log("CONNECTED:", socket.id);
-});
-
-socket.on("connect_error", (err) => {
-    console.error("CONNECT ERROR:", err);
-});
-
-socket.on("disconnect", (reason) => {
-    console.error("DISCONNECTED:", reason);
-});
+// TEMP DEBUG SOCKET STUB
+const socket = {
+    id: "offline",
+    on: () => {},
+    emit: () => {}
+};
 
 /* =========================
    GAME STATE
