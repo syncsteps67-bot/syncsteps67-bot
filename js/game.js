@@ -11,10 +11,18 @@ import { updateLevel4 } from "../LevelLogic/World1/Level4.js";
 import { updateLevel5 } from "../LevelLogic/World1/Level5.js";
 import { io } from "https://cdn.socket.io/4.7.2/socket.io.esm.min.js";
 
-const socket = io("syncsteps67-bot-production.up.railway.app");
+const socket = io("https://syncsteps67-bot-production.up.railway.app");
 
 socket.on("connect", () => {
-    console.log("Connected:", socket.id);
+    console.log("CONNECTED:", socket.id);
+});
+
+socket.on("connect_error", (err) => {
+    console.error("CONNECT ERROR:", err);
+});
+
+socket.on("disconnect", (reason) => {
+    console.error("DISCONNECTED:", reason);
 });
 
 /* =========================
