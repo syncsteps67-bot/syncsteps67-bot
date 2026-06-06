@@ -11,7 +11,7 @@ import { updateLevel4 } from "../LevelLogic/World1/Level4.js";
 import { updateLevel5 } from "../LevelLogic/World1/Level5.js";
 import { io } from "https://cdn.socket.io/4.8.1/socket.io.esm.min.js";
 
-const socket = io("https://syncsteps67-bot-production.up.railway.app", {
+const socket = io("https://syncsteps67-bot.onrender.com", {
     transports: ["websocket", "polling"]
 });
 
